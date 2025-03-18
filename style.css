@@ -21,13 +21,13 @@ body {
   position: relative;       /* kvůli umístění obrázku vlevo */
 }
 
-/* Křivky (vizitka.svg) vlevo */
 .left-graphic {
   position: absolute;
-  left: -40px;  /* posunutí vlevo, aby křivky částečně přesahovaly */
-  top: 20px;    /* zarovnání shora */
-  width: 40px;  /* úprava šířky dle potřeby */
-  height: auto; /* zachování poměru stran */
+  left: -40px;   /* posun, aby křivky částečně přesahovaly */
+  top: 20px;
+  width: 80px;   /* zvětšíme šířku */
+  height: auto;  /* zachování poměru stran */
+  z-index: 1;    /* nebo -1, pokud chcete obrázek za textem */
 }
 
 /* Nadpisy */
