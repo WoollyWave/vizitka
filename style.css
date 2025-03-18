@@ -9,7 +9,7 @@ body {
   margin: 0;
 }
 
-/* Kontejner vizitky s přesnými rozměry převedenými do px */
+
 .vizitka {
   position: relative;
   width: 340px;    /* 90mm ≈ 340px */
