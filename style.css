@@ -6,19 +6,28 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin: 10;
+  margin: 0;
 }
 
 /* Kontejner vizitky */
 .vizitka {
-  width: 350px;          /* pro ukázku šířka odpovídající "kartičce" na obrazovce */
-  height: 200px;         /* výška v poměru k šířce */
-  background-color: #f9f9f9; /* jemný odstín, nikdy čistě bílá */
-  padding: 20px 25px;    /* větší okraje */
+  width: 350px;             /* šířka "kartičky" na obrazovce */
+  height: 200px;            /* výška v poměru k šířce */
+  background-color: #f9f9f9;/* jemný odstín, nikdy čistě bílá */
+  padding: 20px 25px;       /* větší okraje */
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  text-align: left;      /* zarovnání textu doleva */
-  position: relative;    /* kvůli umístění obrázku vlevo */
+  text-align: left;         /* zarovnání textu doleva */
+  position: relative;       /* kvůli umístění obrázku vlevo */
+}
+
+/* Křivky (vizitka.svg) vlevo */
+.left-graphic {
+  position: absolute;
+  left: -40px;  /* posunutí vlevo, aby křivky částečně přesahovaly */
+  top: 20px;    /* zarovnání shora */
+  width: 40px;  /* úprava šířky dle potřeby */
+  height: auto; /* zachování poměru stran */
 }
 
 /* Nadpisy */
@@ -32,6 +41,15 @@ body {
   font-weight: normal;
   font-size: 1rem;
   color: #666;
+}
+
+/* Odstavce (pro vyrovnání mezer) */
+.vizitka p {
+  margin: 0 0 15px; /* stejné odsazení pod každým odstavcem */
+}
+
+.vizitka p:last-child {
+  margin-bottom: 0; /* poslední odstavec bez dodatečné mezery */
 }
 
 /* Ikony – ukázka s inline SVG v background-image */
@@ -63,13 +81,4 @@ body {
 /* Web ikona */
 .icon.website {
   background-image: url('data:image/svg+xml;utf8,<svg fill="%23000" height="16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M8,0A8,8,0,1,0,16,8,8.01117,8.01117,0,0,0,8,0Zm4.76953,4H9.57617A15.32236,15.32236,0,0,0,8.47266,1.67383,6.02309,6.02309,0,0,1,12.76953,4ZM8,1.2A14.48373,14.48373,0,0,1,9.1582,4H6.8418A14.48373,14.48373,0,0,1,8,1.2ZM3.23047,4A6.02309,6.02309,0,0,1,7.52734,1.67383,15.32236,15.32236,0,0,0,6.42383,4ZM4.18555,8a13.27991,13.27991,0,0,1,.165-2H7.6V8Zm3.41406,0V6H11.65A13.27991,13.27991,0,0,1,11.81445,8ZM2.05,8A5.94936,5.94936,0,0,1,2,6H4.0332a14.81248,14.81248,0,0,0-.17285,2Zm5.55,2v2H4.35059A13.27991,13.27991,0,0,1,4.18555,10ZM8.23535,10H7.6V8h.63535ZM11.64941,10a13.27991,13.27991,0,0,1-.165,2H8.23535V10ZM14,8a5.94936,5.94936,0,0,1-.05,2H11.81445a14.81248,14.81248,0,0,0,.17285-2Z"/></svg>');
-}
-
-/* Křivky (vizitka.svg) vlevo */
-.left-graphic {
-  position: absolute;
-  left: -40px;   /* posunutí vlevo, aby křivky částečně přesahovaly */
-  top: 20px;     /* zarovnání shora */
-  width: 40px;   /* úprava šířky dle potřeby */
-  height: auto;  /* zachování poměru stran */
 }
