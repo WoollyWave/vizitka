@@ -9,17 +9,14 @@ body {
 }
 
 .vizitka {
-  position: relative;
-  width: 450px;
-  height: 300px;
+  width: 350px;
+  height: 200px;
   background-color: #f9f9f9;
   padding: 20px 25px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: left;
-  overflow: hidden;
 }
-
 
 .vizitka h1 {
   margin: 0 0 5px;
@@ -51,16 +48,16 @@ body {
   margin-right: 5px;
 }
 
-.icon.address {
-  background-image: url('data:image/svg+xml;utf8,<svg fill="%23000" height="16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M8 0C4.691 0 2 2.691 2 6c0 4.092 5.025 9.492 5.249 9.73.144.153.378.153.522 0C8.975 15.492 14 10.092 14 6c0-3.309-2.691-6-6-6zm0 9c-1.654 0-3-1.346-3-3S6.346 3 8 3s3 1.346 3 3-1.346 3-3 3z"/></svg>');
-}
-
 .icon.email {
   background-image: url('data:image/svg+xml;utf8,<svg fill="%23000" height="16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M14 2H2C0.897 2 0 2.897 0 4v8c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2zm-1.212 2L8 7.129 3.212 4h9.576zM2 12V5.07l5.446 3.633c.173.116.379.174.581.174s.408-.058.581-.174L14 5.07 14.002 12H2z"/></svg>');
 }
 
 .icon.phone {
   background-image: url('data:image/svg+xml;utf8,<svg fill="%23000" height="16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M13.807 9.516l-2.601-.371c-.174-.024-.345-.01-.504.041-.159.05-.298.136-.411.251l-1.18 1.188a12.449 12.449 0 01-4.061-4.061l1.188-1.18c.116-.113.202-.252.252-.411.05-.159.065-.33.04-.504l-.37-2.602A.985.985 0 005.277.993H2.991C2.444.993 2 .437 2 1v1c0 6.617 5.383 12 12 12h1c.563 0 .007-.444.007-.991v-2.286a.987.987 0 00-.2-.603z"/></svg>');
+}
+
+.icon.address {
+  background-image: url('data:image/svg+xml;utf8,<svg fill="%23000" height="16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M8 0C4.691 0 2 2.691 2 6c0 4.092 5.025 9.492 5.249 9.73.144.153.378.153.522 0C8.975 15.492 14 10.092 14 6c0-3.309-2.691-6-6-6zm0 9c-1.654 0-3-1.346-3-3S6.346 3 8 3s3 1.346 3 3-1.346 3-3 3z"/></svg>');
 }
 
 .icon.website {
